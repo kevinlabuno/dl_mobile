@@ -1,0 +1,164 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Abu-abu Terang */
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #FFFFFF; /* Putih */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Hapus margin */
+    height: 50px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Menempatkan konten di tengah secara horizontal */
+    width: 50px; /* Sesuaikan lebar tombol dengan kebutuhan */
+    height: 100%; /* Gunakan tinggi yang sama dengan tinggi header */
+    border: none; /* Menghapus border */
+    background: none; /* Menghapus background */
+}
+
+.back-button i {
+    font-size: 24px; /* Ubah ukuran ikon sesuai kebutuhan */
+    margin-right: 5px; /* Menambahkan jarak antara ikon dan teks */
+}
+
+.header-navbar {
+    background-color:#FFFFFF; /* Warna latar belakang */
+    padding: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    scroll-snap-type: x mandatory;
+    display: flex;
+    position: fixed; /* Posisi tetap */
+    top: 0; /* Menempel di bagian atas */
+    left: 0; /* Menempel di bagian kiri */
+    width: 100%; /* Lebar penuh */
+    z-index: 1000; /* Pastikan berada di atas elemen lain */
+    margin: 0; /* Hapus margin */
+    height: 50px;
+}
+
+.header-navbar .scrollable-nav {
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 0 10px;
+}
+
+.header-navbar .scrollable-nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 17px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #424242; /* Abu-abu Terang */
+    border: 1px solid #FFCDD2; /* Tambahkan border dengan warna yang sama dengan teks */
+    background-color: transparent; /* Hapus background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-navbar .scrollable-nav a:hover {
+    background-color: #FFCDD2; /* Merah Lebih Terang */
+}
+
+.bottom-navbar .nav-button.active {
+    background-color: #E57373; /* Warna latar belakang saat tombol aktif */
+    color: white; /* Warna teks saat tombol aktif */
+}
+.header-navbar .scrollable-nav a:last-child {
+    margin-right: 10px; /* Menambahkan jarak di kanan tombol terakhir */
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    margin-bottom: 60px;
+    background-color: #F5F5F5; /* Abu-abu Terang */
+    padding-top: 90px; /* Menambahkan ruang di bagian atas untuk menghindari konten yang tertutup oleh header */
+}
+
+.main-content .content-box {
+    background-color: #FFFFFF; /* Putih */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #424242; /* Abu-abu Gelap */
+}
+
+.main-content .content-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #424242; /* Abu-abu Gelap */
+}
+
+.main-content .content-box:hover {
+    background-color: #81D4FA; /* Biru Terang pada hover */
+    color: #FFFFFF; /* Teks putih pada hover */
+}
+
+.bottom-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #F5F5F5;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #E57373;
+    border-top: 1px solid #b3b3b3;
+    height: 35px;
+}
+
+.fas {
+    color: #4242427c; /* Default color */
+}
+
+.bottom-navbar .nav-button {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #4242427c;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bottom-navbar .nav-button i {
+    font-size: 24px;
+}
+
+.bottom-navbar .nav-button span {
+    font-size: 12px;
+}
+
+
+
+

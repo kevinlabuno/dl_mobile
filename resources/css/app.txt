@@ -1,0 +1,8 @@
+colour 
+bottom colour background :  #340068;
+bottom button colour : #FFFCF9;
+content background clour : #FFFCF9;
+card rounded colour : #FFFCF9;
+line colour:  #340068;
+box shadow : #34006844;
+
