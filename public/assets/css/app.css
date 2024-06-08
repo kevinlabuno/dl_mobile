@@ -74,11 +74,12 @@ body, html {
 }
 
 .header-navbar .scrollable-nav a:hover {
-    background-color: #81D4FA; /* Merah Lebih Terang */
+    background-color: #81D4FA;
+    color: #FFFFFF; /* Merah Lebih Terang */
 }
 
 .bottom-navbar .nav-button.active {
-    background-color: #E57373; /* Warna latar belakang saat tombol aktif */
+    background-color: #81D4FA; /* Warna latar belakang saat tombol aktif */
     color: white; /* Warna teks saat tombol aktif */
 }
 .header-navbar .scrollable-nav a:last-child {
@@ -135,9 +136,9 @@ body, html {
     height: 35px;
 }
 
-.fas {
-    color: #4242427c; /* Default color */
-}
+ .fas {
+    color: #4242427c; 
+} 
 
 .bottom-navbar .nav-button {
     background: none;
