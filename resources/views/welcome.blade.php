@@ -1,54 +1,29 @@
 @extends('layouts.home')
 
 @section('content')
+
     <div class="content-box">
-        <h1>Welcome to Your Mobile App</h1>
-        <p>This is the main content area. Scroll down to see more content.</p>
+        <i class="fas fa-chart-line"></i>
+        <div class="text-content">
+            <h3>Pendapatan</h3>
+            <p>Rp. 45.000</p>
+        </div>
     </div>
     <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec viverra dui. Phasellus fermentum interdum diam, ac viverra lorem. Cras sed augue sit amet metus volutpat suscipit. Donec nec bibendum velit. Fusce ut tortor dolor.</p>
+        <i class="fas fa-wallet"></i>
+        <div class="text-content">
+            <h3>Pengeluaran</h3>
+            <p>Rp. 45.000</p>
+        </div>
     </div>
     <div class="content-box">
-        <h1>Welcome to Your Mobile App</h1>
-        <p>This is the main content area. Scroll down to see more content.</p>
+        <i class="fas fa-weight"></i>
+        <div class="text-content">
+            <h3>Kilo Masuk</h3>
+            <p>45 Kg</p>
+        </div>
     </div>
-    <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec viverra dui. Phasellus fermentum interdum diam, ac viverra lorem. Cras sed augue sit amet metus volutpat suscipit. Donec nec bibendum velit. Fusce ut tortor dolor.</p>
-    </div>
-    <div class="content-box">
-        <h1>Welcome to Your Mobile App</h1>
-        <p>This is the main content area. Scroll down to see more content.</p>
-    </div>
-    <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec viverra dui. Phasellus fermentum interdum diam, ac viverra lorem. Cras sed augue sit amet metus volutpat suscipit. Donec nec bibendum velit. Fusce ut tortor dolor.</p>
-    </div>
-    <div class="content-box">
-        <h1>Welcome to Your Mobile App</h1>
-        <p>This is the main content area. Scroll down to see more content.</p>
-    </div>
-    <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec viverra dui. Phasellus fermentum interdum diam, ac viverra lorem. Cras sed augue sit amet metus volutpat suscipit. Donec nec bibendum velit. Fusce ut tortor dolor.</p>
-    </div>
-    <div class="content-box">
-        <h1>Welcome to Your Mobile App</h1>
-        <p>This is the main content area. Scroll down to see more content.</p>
-    </div>
-    <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec viverra dui. Phasellus fermentum interdum diam, ac viverra lorem. Cras sed augue sit amet metus volutpat suscipit. Donec nec bibendum velit. Fusce ut tortor dolor.</p>
-    </div>
-    <div class="content-box">
-        <h1>Welcome to Your Mobile App</h1>
-        <p>This is the main content area. Scroll down to see more content.</p>
-    </div>
-    <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec viverra dui. Phasellus fermentum interdum diam, ac viverra lorem. Cras sed augue sit amet metus volutpat suscipit. Donec nec bibendum velit. Fusce ut tortor dolor.</p>
-    </div>
-    <div class="content-box">
-        <h1>Welcome to Your Mobile App</h1>
-        <p>This is the main content area. Scroll down to see more content.</p>
-    </div>
-    <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec viverra dui. Phasellus fermentum interdum diam, ac viverra lorem. Cras sed augue sit amet metus volutpat suscipit. Donec nec bibendum velit. Fusce ut tortor dolor.</p>
-    </div>
-    <!-- Tambahkan lebih banyak konten di sini -->
+
+
+
 @endsection

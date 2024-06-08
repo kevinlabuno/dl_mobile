@@ -34,12 +34,12 @@ body, html {
     margin-right: 5px; /* Menambahkan jarak antara ikon dan teks */
 }
 
+/* Gaya untuk .header-navbar */
 .header-navbar {
-    background-color:#FFFFFF; /* Warna latar belakang */
+    background-color: #FFFFFF; /* Warna latar belakang */
     padding: 10px;
     overflow-x: auto;
     white-space: nowrap;
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     scroll-snap-type: x mandatory;
     display: flex;
@@ -52,6 +52,7 @@ body, html {
     height: 50px;
 }
 
+/* Gaya untuk kontainer tautan yang bisa digulir */
 .header-navbar .scrollable-nav {
     display: flex;
     align-items: center;
@@ -59,6 +60,7 @@ body, html {
     padding: 0 10px;
 }
 
+/* Gaya untuk tautan dalam .scrollable-nav */
 .header-navbar .scrollable-nav a {
     display: inline-block;
     padding: 10px 20px;
@@ -73,18 +75,44 @@ body, html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-navbar .scrollable-nav a:hover {
-    background-color: #81D4FA;
-    color: #FFFFFF; /* Merah Lebih Terang */
-}
-
+/* Gaya untuk tombol aktif di .bottom-navbar */
 .bottom-navbar .nav-button.active {
-    background-color: #81D4FA; /* Warna latar belakang saat tombol aktif */
+    background-color: #E57373; /* Warna latar belakang saat tombol aktif */
     color: white; /* Warna teks saat tombol aktif */
 }
+
+/* Menambahkan jarak di kanan tombol terakhir */
 .header-navbar .scrollable-nav a:last-child {
-    margin-right: 10px; /* Menambahkan jarak di kanan tombol terakhir */
+    margin-right: 10px;
 }
+
+/* Warna default untuk ikon dengan kelas .fas */
+.fas {
+    color: #4242427c; /* Warna default */
+}
+
+/* Hover state untuk tautan dalam .scrollable-nav */
+.header-navbar .scrollable-nav a:hover {
+    background-color: #E57373; /* Warna latar belakang saat dihover */
+    color: white; /* Warna teks saat dihover */
+}
+
+/* Hover state untuk ikon dalam tautan */
+.header-navbar .scrollable-nav a:hover .fas {
+    color: white; /* Warna ikon saat tautan dihover */
+}
+
+/* State aktif untuk tautan dalam .scrollable-nav */
+.header-navbar .scrollable-nav a.active {
+    background-color: #E57373; /* Warna latar belakang saat aktif */
+    color: white; /* Warna teks saat aktif */
+}
+
+/* State aktif untuk ikon dalam tautan */
+.header-navbar .scrollable-nav a.active .fas {
+    color: white; /* Warna ikon saat tautan aktif */
+}
+
 
 .main-content {
     flex: 1;
@@ -131,14 +159,14 @@ body, html {
     width: 100%;
     color: #F5F5F5;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #81D4FA;
-    border-top: 1px solid #81D4FA;
+    border-bottom: 1px solid #E57373;
+    border-top: 1px solid #b3b3b3;
     height: 35px;
 }
 
- .fas {
-    color: #4242427c; 
-} 
+.fas {
+    color: #4242427c; /* Default color */
+}
 
 .bottom-navbar .nav-button {
     background: none;
@@ -160,6 +188,39 @@ body, html {
     font-size: 12px;
 }
 
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Warna latar belakang card */
+}
+
+.content-box {
+    display: flex;
+    align-items: center;
+}
+
+.content-box i {
+    font-size: 40px; /* Ukuran ikon besar */
+    margin-right: 20px; /* Jarak antara ikon dan teks */
+    color: #E57373; /* Warna ikon */
+}
+
+.text-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #424242; /* Warna teks h3 */
+}
+
+.text-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #757575; /* Warna teks p */
+}
 
 
 

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Menambahkan event listener untuk event mouseover (hover)
         button.addEventListener('mouseover', function() {
             // Mengubah warna ikon menjadi merah saat tombol dihover
-            this.querySelector('i').style.color = '#81D4FA';
+            this.querySelector('i').style.color = '#E57373';
         });
 
         // Menambahkan event listener untuk event mouseout (keluar dari hover)

@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
+    <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dava Laundry</title>
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
@@ -23,5 +24,15 @@
     </div>
 
     <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script>
+     if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+        }).catch(function(error) {
+        console.log('Service Worker registration failed:', error);
+        });
+    }
+    </script>
 </body>
 </html>
