@@ -27,7 +27,14 @@ document.addEventListener("DOMContentLoaded", function() {
             // Mengubah warna ikon menjadi merah saat tombol dihover
             this.querySelector('i').style.color = '#E57373';
         });
-
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch(function(error) {
+        console.log('Service Worker registration failed:', error);
+      });
+  }
         // Menambahkan event listener untuk event mouseout (keluar dari hover)
         button.addEventListener('mouseout', function() {
             // Mengembalikan warna ikon menjadi abu-abu saat keluar dari hover, kecuali jika tombol aktif

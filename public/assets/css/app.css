@@ -142,8 +142,14 @@ body, html {
 }
 
 .main-content .content-box:hover {
-    background-color: #81D4FA; /* Biru Terang pada hover */
-    color: #FFFFFF; /* Teks putih pada hover */
+    background-color: #E57373; /* Warna latar belakang saat dihover */
+    color: #FFFFFF; /* Warna teks saat dihover */
+}
+
+.main-content .content-box:hover i,
+.main-content .content-box:hover h3,
+.main-content .content-box:hover p {
+    color: #FFFFFF; /* Warna putih saat dihover */
 }
 
 .bottom-navbar {
