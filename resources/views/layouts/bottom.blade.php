@@ -8,7 +8,7 @@
     <a href="{{url('/')}}" class="nav-button" id="homeButton">
         <i class="fas fa-home"></i>
     </a> 
-    <a href="{{route('outlet')}}" class="nav-button" id="outletButton">
+    <a href="{{route('setting')}}" class="nav-button" id="outletButton">
         <i class="fas fa-cog"></i>
     </a>
     <a href="#profil" class="nav-button" id="profilButton">

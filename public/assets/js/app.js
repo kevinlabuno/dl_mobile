@@ -1,4 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+var dropdownButtons = document.querySelectorAll('.dropdown-button');
+
+dropdownButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        var dropdownContent = this.nextElementSibling;
+        var isOpen = dropdownContent.style.display === 'block';
+
+        // Menutup semua dropdown content sebelum membuka yang terkait
+        var allDropdownContents = document.querySelectorAll('.dropdown-content');
+        allDropdownContents.forEach(function (dropdown) {
+            dropdown.style.display = 'none';
+        });
+
+        // Membuka atau menutup dropdown content yang terkait
+        dropdownContent.style.display = isOpen ? 'none' : 'block';
+    });
+});
+
+window.addEventListener('click', function (e) {
+    if (!e.target.matches('.dropdown-button')) {
+        var dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(function (dropdown) {
+            dropdown.style.display = 'none';
+        });
+    }
+});
     // Memilih semua tombol navigasi di bagian bawah
     var bottomNavButtons = document.querySelectorAll('.bottom-navbar .nav-button');
     // Memilih tombol kembali
